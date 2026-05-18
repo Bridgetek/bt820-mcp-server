@@ -1,0 +1,2446 @@
+{
+  "text": {
+    "commands": [
+      {
+        "name": "Draw_Text",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "Draw_TextColor",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "EVE_CoCmd_button",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fillWidth",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_glow",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_keys",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_number",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_resetFonts",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_romFont",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setBase",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setFont",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_text",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_text_s",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorA",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorRgb_ex",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorRgb",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorArgb_ex",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_bitmap",
+      "sampleapp_extension",
+      "sampleapp_flash",
+      "sampleapp_font",
+      "sampleapp_lvdsrx",
+      "sampleapp_primitives",
+      "sampleapp_touch",
+      "sampleapp_utility",
+      "sampleapp_video",
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "text",
+      "draw_text",
+      "draw_textcolor"
+    ],
+    "registers": [
+      "CMD_TEXT",
+      "CMD_TEXTDIM"
+    ]
+  },
+  "ui": {
+    "commands": [
+      {
+        "name": "Draw_Text",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "Draw_TextColor",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "EVE_CoCmd_animDraw",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animFrame",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animStop",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animXY",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_arc",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_bgColor",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_button",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_calibrate",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_calibrateSub",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_cgradient",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_clock",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_dial",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fgColor",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_gauge",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_glow",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_gradColor",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_gradient",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_gradientA",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_keys",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_logo",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_number",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_playVideo",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_progress",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_runAnim",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_screenSaver",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_scrollbar",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setScratch",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_sketch",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_slider",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_spinner",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_testCard",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_text",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_text_s",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_toggle",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_videoFrame",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_videoStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertexFormat",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2f",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2ii",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_bitmap",
+      "sampleapp_extension",
+      "sampleapp_flash",
+      "sampleapp_font",
+      "sampleapp_lvdsrx",
+      "sampleapp_primitives",
+      "sampleapp_touch",
+      "sampleapp_utility",
+      "sampleapp_video",
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "widget",
+      "video",
+      "animation",
+      "bitmap",
+      "text"
+    ],
+    "registers": []
+  },
+  "label": {
+    "commands": [
+      {
+        "name": "Draw_Text",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "Draw_TextColor",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "EVE_CoCmd_setFont",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_text",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_text_s",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorA",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorRgb_ex",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorRgb",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_colorArgb_ex",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertexFormat",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2f",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2ii",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_bitmap",
+      "sampleapp_extension",
+      "sampleapp_flash",
+      "sampleapp_font",
+      "sampleapp_lvdsrx",
+      "sampleapp_primitives",
+      "sampleapp_touch",
+      "sampleapp_utility",
+      "sampleapp_video",
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "text",
+      "draw_text",
+      "draw_textcolor"
+    ],
+    "registers": []
+  },
+  "motion": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_animDraw",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animFrame",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animStop",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animXY",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_runAnim",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation"
+    ],
+    "keywords": [
+      "anim",
+      "animation",
+      "file",
+      "flash",
+      "sdcard",
+      "motion",
+      "sampleapp",
+      "src"
+    ],
+    "registers": []
+  },
+  "animation": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_animDraw",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animFrame",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animStop",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animXY",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_runAnim",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation"
+    ],
+    "keywords": [
+      "anim",
+      "animation",
+      "file",
+      "flash",
+      "sdcard",
+      "motion",
+      "reg_anim_active",
+      "sampleapp",
+      "src"
+    ],
+    "registers": [
+      "REG_ANIM_ACTIVE"
+    ]
+  },
+  "flash": {
+    "commands": [
+      {
+        "name": "Flash_Init",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Erase",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_EraseBlocks",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetAddrAvail",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetBadBlockNum",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetState",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Program",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Read",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_SwitchFullMode",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_SwitchState",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Write",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "EVE_CoCmd_flashAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashDetach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashErase",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashFast",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashProgram",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashRead_flush",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSource",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiDesel",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiRx",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiTx",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashUpdate",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashWrite",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_bitmap",
+      "sampleapp_flash",
+      "sampleapp_font",
+      "sampleapp_utility",
+      "sampleapp_video"
+    ],
+    "keywords": [
+      "anim",
+      "animation",
+      "motion",
+      "asset",
+      "assets",
+      "audio",
+      "bitmap",
+      "video",
+      "font",
+      "file",
+      "flash"
+    ],
+    "registers": [
+      "REG_FLASH_SIZE",
+      "REG_FLASH_STATUS"
+    ]
+  },
+  "storage": {
+    "commands": [
+      {
+        "name": "Flash_Init",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Erase",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_EraseBlocks",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetAddrAvail",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetBadBlockNum",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetState",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Program",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Read",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_SwitchFullMode",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_SwitchState",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Write",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "EVE_CoCmd_flashAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashDetach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashErase",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashFast",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashProgram",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashRead_flush",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSource",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiDesel",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiRx",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiTx",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashUpdate",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashWrite",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+            {
+        "name": "EVE_CoCmd_sdAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_sdBlockread",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+            {
+        "name": "EVE_CoCmd_fsSource",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsSize",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsOption",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsDir",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_bitmap",
+      "sampleapp_flash",
+      "sampleapp_font",
+      "sampleapp_utility",
+      "sampleapp_video"
+    ],
+    "keywords": [
+      "anim",
+      "animation",
+      "asset",
+      "audio",
+      "bitmap",
+      "file",
+      "flash",
+      "sdcard",
+      "font",
+      "motion",
+      "sampleapp",
+      "src",
+      "storage"
+    ],
+    "registers": []
+  },
+  "asset": {
+    "commands": [
+      {
+        "name": "Flash_Init",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Erase",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_EraseBlocks",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetAddrAvail",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetBadBlockNum",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_GetState",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Program",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Read",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_SwitchFullMode",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_SwitchState",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "FlashHelper_Write",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "EVE_CoCmd_animFrame",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_animStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_appendF",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashDetach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashErase",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashFast",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashProgram",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashRead_flush",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSource",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiDesel",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiRx",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashSpiTx",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashUpdate",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_flashWrite",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+            {
+        "name": "EVE_CoCmd_sdAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_sdBlockread",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+            {
+        "name": "EVE_CoCmd_fsSource",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsSize",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsOption",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsDir",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_bitmap",
+      "sampleapp_flash",
+      "sampleapp_font",
+      "sampleapp_utility",
+      "sampleapp_video"
+    ],
+    "keywords": [
+      "anim",
+      "animation",
+      "asset",
+      "audio",
+      "bitmap",
+      "file",
+      "flash",
+      "font",
+      "motion",
+      "sampleapp",
+      "src",
+      "storage"
+    ],
+    "registers": []
+  },
+  "graphics": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_bitmapTransform",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_getImage",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_gradColor",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_logo",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_rotateAround",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_sdAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setBitmap",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_toggle",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformA",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformB",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformC",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformD",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformE",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformF",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertexFormat",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_bitmap",
+      "sampleapp_extension",
+      "sampleapp_font",
+      "sampleapp_lvdsrx",
+      "sampleapp_touch",
+      "sampleapp_utility",
+      "sampleapp_video",
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "animation",
+      "audio",
+      "bitmap",
+      "extension",
+      "file",
+      "font",
+      "graphics",
+      "image",
+      "lvdsrx"
+    ],
+    "registers": [
+      "REG_CORE_R1",
+      "REG_CORE_R2",
+      "REG_HCYCLE",
+      "REG_HOFFSET",
+      "REG_HSIZE",
+      "REG_HSYNC0",
+      "REG_HSYNC1",
+      "REG_LVDSRX_CORE_CAPTURE",
+      "REG_LVDSRX_CORE_DEST",
+      "REG_LVDSRX_CORE_DITHER",
+      "REG_LVDSRX_CORE_ENABLE",
+      "REG_LVDSRX_CORE_FORMAT",
+      "REG_LVDSRX_CORE_FRAMES",
+      "REG_LVDSRX_CORE_SETUP",
+      "REG_RE_ACTIVE",
+      "REG_RE_DEST",
+      "REG_RE_DITHER",
+      "REG_RE_FORMAT",
+      "REG_RE_H",
+      "REG_RE_RENDERS",
+      "REG_RE_ROTATE",
+      "REG_RE_W",
+      "REG_SO_EN",
+      "REG_SO_FORMAT",
+      "REG_SO_MODE",
+      "REG_SO_SOURCE",
+      "REG_VCYCLE",
+      "REG_VOFFSET",
+      "REG_VSIZE",
+      "REG_VSYNC0",
+      "REG_VSYNC1"
+    ]
+  },
+  "bitmap": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_bitmapTransform",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_getImage",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_rotateAround",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_sdAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setBitmap",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformA",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformB",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformC",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformD",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformE",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformF",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertexFormat",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2f",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2ii",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_bitmap"
+    ],
+    "keywords": [
+      "assets",
+      "bitmap",
+      "file",
+      "graphics",
+      "image",
+      "sampleapp",
+      "src"
+    ],
+    "registers": [
+    ]
+  },
+  "image": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_bitmapTransform",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_getImage",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_rotateAround",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_sdAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setBitmap",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformA",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformB",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformC",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformD",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformE",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_bitmapTransformF",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertexFormat",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2f",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_vertex2ii",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_bitmap"
+    ],
+    "keywords": [
+      "assets",
+      "bitmap",
+      "file",
+      "graphics",
+      "image",
+      "src",
+      "sampleapp"
+    ],
+    "registers": [
+    ]
+  },
+  "touch": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_button",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_keys",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_touch"
+    ],
+    "keywords": [
+      "animation",
+      "assets",
+      "file",
+      "font",
+      "hdr",
+      "information",
+      "input",
+      "list"
+    ],
+    "registers": [
+      "REG_CTOUCH_EXTENDED",
+      "REG_CTOUCH_TOUCH0_XY",
+      "REG_CTOUCH_TOUCH4_XY",
+      "REG_CTOUCH_TOUCHA_XY",
+      "REG_CTOUCH_TOUCHB_XY",
+      "REG_CTOUCH_TOUCHC_XY",
+      "REG_TAG",
+      "REG_TAG_X",
+      "REG_TAG_Y",
+      "REG_TOUCH_CONFIG",
+      "REG_TOUCH_RAW_XY",
+      "REG_TOUCH_SCREEN_XY",
+      "REG_TOUCH_TAG",
+      "REG_TOUCH_TAG1",
+      "REG_TOUCH_TAG1_XY",
+      "REG_TOUCH_TAG2",
+      "REG_TOUCH_TAG2_XY",
+      "REG_TOUCH_TAG3",
+      "REG_TOUCH_TAG3_XY",
+      "REG_TOUCH_TAG4",
+      "REG_TOUCH_TAG4_XY",
+      "REG_TOUCH_TAG_XY",
+      "REG_TOUCH_TRANSFORM_A",
+      "REG_TOUCH_TRANSFORM_B",
+      "REG_TOUCH_TRANSFORM_C",
+      "REG_TOUCH_TRANSFORM_D",
+      "REG_TOUCH_TRANSFORM_E",
+      "REG_TOUCH_TRANSFORM_F",
+      "REG_TRACKER",
+      "REG_TRACKER_1",
+      "REG_TRACKER_2",
+      "REG_TRACKER_3",
+      "REG_TRACKER_4"
+    ]
+  },
+  "button": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_button",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_keys",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_animation",
+      "sampleapp_audio",
+      "sampleapp_extension",
+      "sampleapp_touch",
+      "sampleapp_utility",
+      "sampleapp_video",
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "button",
+      "sampleapp",
+      "text",
+      "touch",
+      "widget"
+    ],
+    "registers": []
+  },
+  "font": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_button",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fillWidth",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_keys",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_resetFonts",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_romFont",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setFont",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_text_s",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_font"
+    ],
+    "keywords": [
+      "file",
+      "flash",
+      "sdcard",
+      "font",
+      "sampleapp",
+      "src",
+      "text"
+    ],
+    "registers": []
+  },
+  "clock": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_clock",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_graphicsFinish",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_setMatrix",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "bitmap",
+      "clock",
+      "sampleapp",
+      "src",
+      "widget"
+    ],
+    "registers": []
+  },
+  "widget": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_clock",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_keys",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_number",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_progress",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_scrollbar",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_slider",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_spinner",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_toggle",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "sampleapp",
+      "src",
+      "text",
+      "widget"
+    ],
+    "registers": []
+  },
+  "gauge": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_gauge",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "gauge",
+      "sampleapp",
+      "src",
+      "widget"
+    ],
+    "registers": []
+  },
+  "video": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_playVideo",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_videoFrame",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_videoStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_video"
+    ],
+    "keywords": [
+      "asset",
+      "assets",
+      "file",
+      "flash",
+      "sdcard",
+      "media",
+      "sampleapp",
+      "src",
+      "storage",
+      "video"
+    ],
+    "registers": [
+      "REG_VOL_L_PB",
+      "REG_VOL_R_PB",
+      "REG_PLAY_CONTROL",
+      "REG_OBJECT_COMPLETE"
+    ]
+  },
+  "media": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_playVideo",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_videoFrame",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_videoStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_video"
+    ],
+    "keywords": [
+      "asset",
+      "assets",
+      "file",
+      "flash",
+      "sdcard",
+      "media",
+      "sampleapp",
+      "src",
+      "storage",
+      "video"
+    ],
+    "registers": []
+  },
+  "keyboard": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_keys",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "font",
+      "keyboard",
+      "sampleapp",
+      "src",
+      "text",
+      "widget"
+    ],
+    "registers": []
+  },
+  "toggle": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_toggle",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "sampleapp",
+      "src",
+      "text",
+      "toggle",
+      "touch",
+      "widget"
+    ],
+    "registers": []
+  },
+  "progress": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_progress",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "font",
+      "progress",
+      "sampleapp",
+      "src",
+      "text",
+      "touch",
+      "widget"
+    ],
+    "registers": []
+  },
+  "input": {
+    "commands": [
+      {
+        "name": "EVE_CoDl_tag",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_tagMask",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_track",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_touch"
+    ],
+    "keywords": [
+      "input",
+      "sampleapp",
+      "src",
+      "tag",
+      "touch"
+    ],
+    "registers": [
+      "REG_CTOUCH_EXTENDED",
+      "REG_CTOUCH_TOUCH0_XY",
+      "REG_CTOUCH_TOUCH4_XY",
+      "REG_CTOUCH_TOUCHA_XY",
+      "REG_CTOUCH_TOUCHB_XY",
+      "REG_CTOUCH_TOUCHC_XY",
+      "REG_TAG",
+      "REG_TAG_X",
+      "REG_TAG_Y",
+      "REG_TOUCH_CONFIG",
+      "REG_TOUCH_RAW_XY",
+      "REG_TOUCH_SCREEN_XY",
+      "REG_TOUCH_TAG",
+      "REG_TOUCH_TAG1",
+      "REG_TOUCH_TAG1_XY",
+      "REG_TOUCH_TAG2",
+      "REG_TOUCH_TAG2_XY",
+      "REG_TOUCH_TAG3",
+      "REG_TOUCH_TAG3_XY",
+      "REG_TOUCH_TAG4",
+      "REG_TOUCH_TAG4_XY",
+      "REG_TOUCH_TAG_XY",
+      "REG_TOUCH_TRANSFORM_A",
+      "REG_TOUCH_TRANSFORM_B",
+      "REG_TOUCH_TRANSFORM_C",
+      "REG_TOUCH_TRANSFORM_D",
+      "REG_TOUCH_TRANSFORM_E",
+      "REG_TOUCH_TRANSFORM_F",
+      "REG_TRACKER",
+      "REG_TRACKER_1",
+      "REG_TRACKER_2",
+      "REG_TRACKER_3",
+      "REG_TRACKER_4"
+    ]
+  },
+  "tag": {
+    "commands": [
+      {
+        "name": "EVE_CoDl_tag",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoDl_tagMask",
+        "type": "display_list",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_touch"
+    ],
+    "keywords": [
+      "input",
+      "sampleapp",
+      "src",
+      "tag",
+      "touch"
+    ],
+    "registers": [
+      "REG_CTOUCH_EXTENDED",
+      "REG_CTOUCH_TOUCH0_XY",
+      "REG_CTOUCH_TOUCH4_XY",
+      "REG_CTOUCH_TOUCHA_XY",
+      "REG_CTOUCH_TOUCHB_XY",
+      "REG_CTOUCH_TOUCHC_XY",
+      "REG_TAG",
+      "REG_TAG_X",
+      "REG_TAG_Y",
+      "REG_TOUCH_CONFIG",
+      "REG_TOUCH_RAW_XY",
+      "REG_TOUCH_SCREEN_XY",
+      "REG_TOUCH_TAG",
+      "REG_TOUCH_TAG1",
+      "REG_TOUCH_TAG1_XY",
+      "REG_TOUCH_TAG2",
+      "REG_TOUCH_TAG2_XY",
+      "REG_TOUCH_TAG3",
+      "REG_TOUCH_TAG3_XY",
+      "REG_TOUCH_TAG4",
+      "REG_TOUCH_TAG4_XY",
+      "REG_TOUCH_TAG_XY",
+      "REG_TOUCH_TRANSFORM_A",
+      "REG_TOUCH_TRANSFORM_B",
+      "REG_TOUCH_TRANSFORM_C",
+      "REG_TOUCH_TRANSFORM_D",
+      "REG_TOUCH_TRANSFORM_E",
+      "REG_TOUCH_TRANSFORM_F",
+      "REG_TRACKER",
+      "REG_TRACKER_1",
+      "REG_TRACKER_2",
+      "REG_TRACKER_3",
+      "REG_TRACKER_4"
+    ]
+  },
+  "slider": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_slider",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "sampleapp",
+      "slider",
+      "src",
+      "touch",
+      "widget"
+    ],
+    "registers": []
+  },
+  "loading": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_spinner",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_widget"
+    ],
+    "keywords": [
+      "loading",
+      "sampleapp",
+      "src",
+      "widget"
+    ],
+    "registers": []
+  },
+  "audio": {
+    "commands": [
+      {
+        "name": "Play_Sound",
+        "type": "helper",
+        "level": "high",
+        "weight": 10
+      },
+      {
+        "name": "EVE_CoCmd_i2sStart",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_loadWav",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_playWav",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_audio"
+    ],
+    "keywords": [
+      "assets",
+      "audio",
+      "file",
+      "opt_sound",
+      "play_sound",
+      "sampleapp",
+      "sound",
+      "src"
+    ],
+    "registers": [
+      "REG_AUD_PWM",
+      "REG_I2S",
+      "REG_I2S_CFG",
+      "REG_I2S_CTL",
+      "REG_I2S_EN",
+      "REG_I2S_FREQ",
+      "REG_I2S_PAD_CFG",
+      "REG_I2S_STAT",
+      "REG_PLAYBACK_FORMAT",
+      "REG_PLAYBACK_FREQ",
+      "REG_PLAYBACK_LENGTH",
+      "REG_PLAYBACK_LOOP",
+      "REG_PLAYBACK_PAUSE",
+      "REG_PLAYBACK_PLAY",
+      "REG_PLAYBACK_READPTR",
+      "REG_PLAYBACK_START",
+      "REG_SOUND",
+      "REG_PLAY",
+      "REG_VOL_L_PB",
+      "REG_VOL_R_PB",
+      "REG_VOL_SOUND"
+    ]
+  },
+  "sd_card": {
+    "commands": [
+      {
+        "name": "EVE_CoCmd_sdAttach",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_sdBlockread",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+            {
+        "name": "EVE_CoCmd_fsSource",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsSize",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsOption",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsRead",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      },
+      {
+        "name": "EVE_CoCmd_fsDir",
+        "type": "coprocessor",
+        "level": "high",
+        "weight": 8
+      }
+    ],
+    "samples": [
+      "sampleapp_bitmap",
+      "sampleapp_video",
+      "sampleapp_utility",
+      "sampleapp_font",
+      "sampleapp_audio",
+      "sampleapp_animation"
+    ],
+    "keywords": [
+      "opt_fs",
+      "sdcard"
+    ],
+    "registers": [
+      "CMD_FSDIR",
+      "CMD_FSOPTION",
+      "CMD_FSREAD",
+      "CMD_FSSIZE",
+      "CMD_FSSOURCE"
+    ]
+  },
+  "display": {
+    "commands": [],
+    "samples": [],
+    "keywords": [
+      "display",
+      "hcycle",
+      "hoffset",
+      "hsize",
+      "hsync0",
+      "hsync1",
+      "vcycle",
+      "voffset",
+      "vsize",
+      "vsync0",
+      "vsync1"
+    ],
+    "registers": [
+      "REG_HCYCLE",
+      "REG_HOFFSET",
+      "REG_HSIZE",
+      "REG_HSYNC0",
+      "REG_HSYNC1",
+      "REG_LVDSRX_CORE_CAPTURE",
+      "REG_LVDSRX_CORE_DEST",
+      "REG_LVDSRX_CORE_DITHER",
+      "REG_LVDSRX_CORE_ENABLE",
+      "REG_LVDSRX_CORE_FORMAT",
+      "REG_LVDSRX_CORE_FRAMES",
+      "REG_LVDSRX_CORE_SETUP",
+      "REG_RE_ACTIVE",
+      "REG_RE_DEST",
+      "REG_RE_DITHER",
+      "REG_RE_FORMAT",
+      "REG_RE_H",
+      "REG_RE_RENDERS",
+      "REG_RE_ROTATE",
+      "REG_RE_W",
+      "REG_SO_EN",
+      "REG_SO_FORMAT",
+      "REG_SO_MODE",
+      "REG_SO_SOURCE",
+      "REG_VCYCLE",
+      "REG_VOFFSET",
+      "REG_VSIZE",
+      "REG_VSYNC0",
+      "REG_VSYNC1"
+    ]
+  },
+  "lvds": {
+    "commands": [],
+    "samples": [],
+    "keywords": [
+      "lvds",
+      "lvdsrx"
+    ],
+    "registers": [
+      "REG_LVDSRX_CORE_CAPTURE",
+      "REG_LVDSRX_CORE_DEST",
+      "REG_LVDSRX_CORE_DITHER",
+      "REG_LVDSRX_CORE_ENABLE",
+      "REG_LVDSRX_CORE_FORMAT",
+      "REG_LVDSRX_CORE_FRAMES",
+      "REG_LVDSRX_CORE_SETUP",
+      "REG_LVDSRX_CTRL",
+      "REG_LVDSRX_SETUP",
+      "REG_LVDSRX_STAT",
+      "REG_LVDSTX_CTRL_CH0",
+      "REG_LVDSTX_CTRL_CH1",
+      "REG_LVDSTX_EN",
+      "REG_LVDSTX_ERR_STAT",
+      "REG_LVDSTX_PLLCFG",
+      "REG_LVDSTX_STAT"
+    ]
+  },
+  "primitives": {
+    "commands": [],
+    "samples": [
+      "sampleapp_primitives"
+    ],
+    "keywords": [
+      "primitives",
+      "point",
+      "line",
+      "rect",
+      "bargraph",
+      "linestrip",
+      "edgestrip",
+      "scissor",
+      "stencil",
+      "polygon",
+      "cube",
+      "region",
+      "testcard"
+    ],
+    "registers": []
+  },
+  "utility": {
+    "commands": [],
+    "samples": [
+      "sampleapp_utility"
+    ],
+    "keywords": [
+      "utility",
+      "calllist",
+      "copylist",
+      "inflate",
+      "coprocessorfault",
+      "fillwidth",
+      "printtype",
+      "screenrotate",
+      "numberbase",
+      "crccheck",
+      "skipcond",
+      "waitcond",
+      "interrupt",
+      "zorder",
+      "context"
+    ],
+    "registers": []
+  }
+}

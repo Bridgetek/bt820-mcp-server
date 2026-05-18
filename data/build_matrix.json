@@ -1,0 +1,17 @@
+{
+  "platforms": {
+    "rp2040": {
+      "graphics": [ "bt820" ],
+      "spi": [ "single" ]
+    },
+    "ft4222": {
+      "graphics": [ "bt820" ],
+      "spi": [ "single", "dual", "quad" ]
+    },
+    "mpsse": {
+      "graphics": [ "bt820" ],
+      "spi": [ "single" ]
+    }
+  },
+  "displays": [ "fhd", "wxga", "wuxga", "custom" ]
+}
