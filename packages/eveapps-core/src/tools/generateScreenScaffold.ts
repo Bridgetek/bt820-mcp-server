@@ -54,9 +54,6 @@ void ${functionName}(EVE_HalContext* phost) {
 
     ${args.touch ? "/* TODO: assign TAG values and handle touch routing */" : ""}
 
-    /* Footer status */
-    EVE_CoCmd_text(phost, 40, 700, 24, 0, "Status: Ready");
-
     EVE_Util_clearScreen(s_pHalContext);
     Gpu_Release(s_pHalContext);
 }

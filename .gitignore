@@ -1,5 +1,4 @@
-build/
+node_modules
+packages/*/dist
+*.tsbuildinfo
 .vs
-package-lock.json
-dist/
-node_modules/

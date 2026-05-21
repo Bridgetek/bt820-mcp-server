@@ -11,7 +11,9 @@ export const generateBuildCommandInput = z.object({
 
 export type GenerateBuildCommandInput = z.infer<typeof generateBuildCommandInput>;
 
-export function generateBuildCommand(args: GenerateBuildCommandInput) {
+export function generateBuildCommand(
+    args: GenerateBuildCommandInput
+) {
     const matrix = loadBuildMatrix();
     const platformKey = args.platform.toLowerCase();
     const graphicsKey = args.graphics.toLowerCase();

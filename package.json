@@ -4,10 +4,14 @@
   "private": true,
   "description": "MCP server for Bridgetek BT82X customer engineers",
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "dev": "tsx src/server.ts",
-    "start": "node dist/server.js"
+    "build": "npm run build --workspaces",
+    "clean": "rimraf packages/*/dist",
+    "dev:mcp": "npm run dev -w @bridgetek/bt820-mcp-server",
+    "dev:cli": "npm run dev -w @bridgetek/bt820-cli"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",

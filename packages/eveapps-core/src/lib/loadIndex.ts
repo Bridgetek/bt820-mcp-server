@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type {
     BuildMatrix,
     CommandIndexItem,
@@ -16,7 +17,9 @@ export interface RegisterIndexItem {
     related_features?: string[];
 }
 
-const dataDir = path.resolve(process.cwd(), "data");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const dataDir = path.resolve(__dirname, "../../data");
 
 function readJsonFile<T>(filename: string): T {
     const fullPath = path.join(dataDir, filename);

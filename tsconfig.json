@@ -1,16 +1,14 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-
-    "types": ["node"]
-  },
-  "include": [ "src" ]
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/eveapps-core"
+    },
+    {
+      "path": "./packages/bt820-mcp-server"
+    },
+    {
+      "path": "./packages/bt820-cli"
+    }
+  ]
 }
