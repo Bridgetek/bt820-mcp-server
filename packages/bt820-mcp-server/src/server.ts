@@ -22,6 +22,9 @@ import {
     traceFeatureToCommands,
     traceFeatureToCommandsInput,
 
+    readSourceFile,
+    readSourceFileInput,
+
     retrieveAnswer
 } from "@bridgetek/eveapps-core";
 
@@ -269,6 +272,16 @@ server.registerTool(
         inputSchema: traceFeatureToCommandsInput.shape,
     },
     safeTool(traceFeatureToCommands)
+);
+
+server.registerTool(
+    "bt820_read_file",
+    {
+        title: "Read raw source file",
+        description: "Read the raw contents of a file from the local EveApps repository.",
+        inputSchema: readSourceFileInput.shape,
+    },
+    safeTool(async (args: { relative_path: string }) => readSourceFile(args, context))
 );
 
 // -----------------------------

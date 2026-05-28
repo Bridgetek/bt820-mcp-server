@@ -25,6 +25,10 @@ import {
     validateBt820Code,
     validateBt820CodeInput,
 } from "./tools/validateBt820Code.js";
+import {
+    readSourceFile,
+    readSourceFileInput,
+} from "./tools/readSourceFile.js";
 
 import { loadBuildMatrix, loadCommands, loadSamples, loadRegisters } from "./lib/loadIndex.js";
 
@@ -211,6 +215,26 @@ server.registerTool(
             {
                 type: "text",
                 text: JSON.stringify(validateBt820Code(args), null, 2),
+            },
+        ],
+    })
+);
+
+server.registerTool(
+    "bt820_read_file",
+    {
+        title: "Read raw source file",
+        description: "Read the raw contents of a file from the local EveApps repository.",
+        inputSchema: readSourceFileInput.shape,
+    },
+    async (args) => ({
+        content: [
+            {
+                type: "text",
+                text: JSON.stringify(readSourceFile(args, {
+                    workspaceRoot: process.cwd(),
+                    eveappsRoot: process.env.EVEAPPS_ROOT,
+                } as any), null, 2),
             },
         ],
     })
