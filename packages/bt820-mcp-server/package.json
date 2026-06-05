@@ -1,5 +1,5 @@
 {
-  "name": "@bridgetek/bt820-mcp-server",
+  "name": "bt820-mcp-server",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/server.js",
@@ -11,7 +11,7 @@
     "dev": "node --watch dist/server.js"
   },
   "dependencies": {
-    "@bridgetek/eveapps-core": "1.0.0",
+    "eveapps-core": "1.0.0",
     "@modelcontextprotocol/sdk": "^1.17.1",
     "zod": "^3.25.76"
   },

@@ -7,7 +7,7 @@
     "ignoreDeprecations": "5.0",
     "baseUrl": ".",
     "paths": {
-      "@bridgetek/eveapps-core": ["../eveapps-core/src/index.ts"]
+      "eveapps-core": ["../eveapps-core/src/index.ts"]
     }
   },
   "references": [

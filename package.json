@@ -1,25 +1,24 @@
 {
-  "name": "bt820-mcp-server",
-  "version": "0.1.0",
+  "name": "bt820-mcp-server-monorepo",
   "private": true,
-  "description": "MCP server for Bridgetek BT82X customer engineers",
   "type": "module",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "clean": "rimraf packages/*/dist",
-    "dev:mcp": "npm run dev -w @bridgetek/bt820-mcp-server",
-    "dev:cli": "npm run dev -w @bridgetek/bt820-cli"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "zod": "^3.24.1"
+    "build": "node scripts/build.js",
+    "clean": "node scripts/clean.js",
+    "release": "node scripts/release.js",
+    "dev:mcp": "npm run dev -w bt820-mcp-server",
+    "dev:cli": "npm run dev -w bt820-cli",
+    "link:mcp": "npm link -w bt820-mcp-server"
   },
   "devDependencies": {
     "@types/node": "^22.19.18",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "eveapps-core": "^1.0.0"
   }
 }

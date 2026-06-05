@@ -26,7 +26,7 @@ import {
     readSourceFileInput,
 
     retrieveAnswer
-} from "@bridgetek/eveapps-core";
+} from "eveapps-core";
 
 import path from "path";
 import fs from "fs";

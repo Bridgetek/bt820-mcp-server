@@ -10,7 +10,7 @@ The goal is to turn the BT820 SDK and sample repository into an AI-assisted deve
 - understand BT820 / EVE API symbols
 - map user requirements to commands and samples
 - generate minimal screen scaffolds
-- validate common mistakes in BT820 application code
+- validate common mistakes in BT820 application code (TBD)
 - generate valid build commands for supported target configurations
 
 This MCP server is intended to support both learning and production development workflows.
@@ -24,7 +24,7 @@ Recommended positioning names:
 - BT820 Application Builder Assistant
 - BT820 Sample Navigator
 - BT820 API Copilot
-- BT820 Board Porting Assistant
+- BT820 Board Porting Assistant (TBD)
 
 Primary value proposition:
 
@@ -65,25 +65,25 @@ The MCP server should not:
 
 Typical needs:
 
-- “Which sample should I start from?”
-- “What does this command do?”
-- “How do I build for RP2040?”
+- ï¿½Which sample should I start from?ï¿½
+- ï¿½What does this command do?ï¿½
+- ï¿½How do I build for RP2040?ï¿½
 
 ### 4.2 Application Developer
 
 Typical needs:
 
-- “How do I build a touch menu?”
-- “Which commands are involved in animation?”
-- “Can you generate a minimal screen skeleton?”
+- ï¿½How do I build a touch menu?ï¿½
+- ï¿½Which commands are involved in animation?ï¿½
+- ï¿½Can you generate a minimal screen skeleton?ï¿½
 
 ### 4.3 Platform Engineer / FAE
 
 Typical needs:
 
-- “Which repo sample best matches this customer use case?”
-- “What does `REG_TOUCH_TAG` mean?”
-- “Why does this code look structurally wrong?”
+- ï¿½Which repo sample best matches this customer use case?ï¿½
+- ï¿½What does `REG_TOUCH_TAG` mean?ï¿½
+- ï¿½Why does this code look structurally wrong?ï¿½
 
 ---
 
@@ -121,49 +121,180 @@ Recommended implementation:
 
 ---
 
-## 6. Repository Assumptions
+## 6. BT820 MCP Server Setup Guide for EveApps-BT82X
 
-The design assumes the SDK repo contains:
+This guide explains how to connect the BT820 MCP Server to your local EveApps-BT82X workspace, enabling AI assistants to understand the BT820 SDK, browse samples, and provide project-aware assistance.
 
-- common BT820 / EVE headers
-- public API declarations
-- sample app directories grouped by feature
-- platform/display/build guidance in README or build files
+### Prerequisites
 
-Expected repo references include:
+Before you begin, make sure you have:
 
-- `common/eve_hal/EVE_CoCmd.h`
-- `common/eve_hal/EVE_GpuDef.h`
-- `SampleApp/**`
+* **Node.js** (version 18 or later recommended)
+* **Visual Studio Code**
+* An AI extension that supports the **Model Context Protocol (MCP)**
 
----
+You can verify your Node.js installation:
+```sh
+node -v
+npm -v
+```
 
-## 7. Data Artifacts
+### Step 1: Download the EveApps-BT82X Repository
 
-## 7.1 `commands.json`
+Clone or download the EveApps-BT82X repository to your local machine.
 
-Purpose:
+Example:
 
-- represent callable API symbols and helper commands
+```sh
+git clone https://github.com/Bridgetek/EveApps-BT82X
+```
 
-Recommended schema:
+Suppose the repository is located at:
 
-```json
-[
-  {
-    "name": "EVE_CoCmd_text",
-    "category": "widget_text",
-    "signature": "void EVE_CoCmd_text(EVE_HalContext *phost, int16_t x, int16_t y, int16_t font, uint16_t options, const char *s)",
-    "summary": "Draw text using coprocessor command",
-    "params": [
-      {
-        "name": "phost",
-        "type": "EVE_HalContext*",
-        "desc": "HAL context"
-      }
-    ],
-    "related_samples": ["sampleapp_widget_buttondemo"],
-    "related_features": ["text", "label", "ui"],
-    "source_file": "common/eve_hal/EVE_CoCmd.h"
+```sh
+D:\EveApps-BT82X
+```
+
+### Step 2: Install the BT820 MCP Server
+
+Install the latest version globally using npm:
+
+```sh
+npm install -g bt820-mcp-server
+```
+
+After installation, you can verify it by running:
+
+```sh
+bt820-mcp-server --help
+```
+
+### Step 3: Create an MCP Configuration File
+
+Open the **EveApps-BT82X** folder in Visual Studio Code.
+
+In the **root directory** of the repository, create a new file named:
+
+```
+mcp.json
+```
+
+Add the following content:
+
+```
+{
+  "mcpServers": {
+    "bt820": {
+      "command": "bt820-mcp-server",
+      "args": [
+        "--eveapps",
+        "D:\\EveApps-BT82X"
+      ]
+    }
   }
-]
+}
+```
+
+Replace:
+
+```
+D:\\EveApps-BT82X
+```
+
+with the actual path to your local EveApps-BT82X repository.
+
+For example:
+
+```
+{
+  "mcpServers": {
+    "bt820": {
+      "command": "bt820-mcp-server",
+      "args": [
+        "--eveapps",
+        "C:\\Users\\John\\Documents\\EveApps-BT82X"
+      ]
+    }
+  }
+}
+```
+
+> [!Note]
+
+> * Use double backslashes (\\) in Windows paths inside JSON files.
+
+> * Alternatively, you may use forward slashes:
+
+> "D:/EveApps-BT82X"
+
+### Step 4: Restart Visual Studio Code
+
+Save the **mcp.json** file.
+
+Close and reopen Visual Studio Code (or reload the window) so that the MCP configuration is detected and the BT820 MCP Server starts.
+
+### Step 5: Verify the MCP Server
+
+Open your AI chat panel and ask:
+
+```
+What tools do you have for BT820?
+```
+
+If the MCP server is configured correctly, the assistant should respond with the BT820-specific tools that are available, such as sample lookup, API reference, screen scaffold generation, or other BT820 development utilities.
+
+### Troubleshooting
+#### bt820-mcp-server is not recognized
+
+Verify that the package was installed successfully:
+
+```sh
+npm install -g bt820-mcp-server
+```
+
+Then check:
+
+```sh
+bt820-mcp-server --help
+```
+
+If the command is still not found, ensure that your global npm installation path is included in your system **PATH** environment variable.
+
+#### The AI assistant cannot find any BT820 tools
+
+Check that:
+
+* mcp.json is located in the root of the EveApps-BT82X workspace.
+* The --eveapps path points to the correct local repository.
+* Visual Studio Code has been restarted after creating or modifying mcp.json.
+
+### Example Directory Structure
+EveApps-BT82X/
+â”‚
+â”œâ”€â”€ mcp.json
+â”œâ”€â”€ common/
+â”œâ”€â”€ SampleApp/
+â””â”€â”€ ...
+
+
+### Quick Start Summary
+1. Download EveApps-BT82X.
+
+2. Install the MCP server:
+```sh
+npm install -g bt820-mcp-server
+```
+
+3. Create mcp.json in the repository root.
+
+4. Configure the --eveapps path.
+
+5. Restart Visual Studio Code.
+
+6. Ask:
+
+```
+What tools do you have for BT820?
+```
+
+If the assistant lists the available BT820 tools, the setup is complete.
