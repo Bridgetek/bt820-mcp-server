@@ -65,25 +65,25 @@ The MCP server should not:
 
 Typical needs:
 
-- �Which sample should I start from?�
-- �What does this command do?�
-- �How do I build for RP2040?�
+- Which sample should I start from?
+- What does this command do?
+- How do I build for RP2040?
 
 ### 4.2 Application Developer
 
 Typical needs:
 
-- �How do I build a touch menu?�
-- �Which commands are involved in animation?�
-- �Can you generate a minimal screen skeleton?�
+- How do I build a touch menu?
+- Which commands are involved in animation?
+- Can you generate a minimal screen skeleton?
 
 ### 4.3 Platform Engineer / FAE
 
 Typical needs:
 
-- �Which repo sample best matches this customer use case?�
-- �What does `REG_TOUCH_TAG` mean?�
-- �Why does this code look structurally wrong?�
+- Which repo sample best matches this customer use case?
+- What does `REG_TOUCH_TAG` mean?
+- Why does this code look structurally wrong?
 
 ---
 
@@ -219,12 +219,9 @@ For example:
 }
 ```
 
-> [!Note]
-
+> [!NOTE]
 > * Use double backslashes (\\) in Windows paths inside JSON files.
-
 > * Alternatively, you may use forward slashes:
-
 > "D:/EveApps-BT82X"
 
 ### Step 4: Restart Visual Studio Code
@@ -269,12 +266,14 @@ Check that:
 * Visual Studio Code has been restarted after creating or modifying mcp.json.
 
 ### Example Directory Structure
+```
 EveApps-BT82X/
 │
 ├── mcp.json
 ├── common/
 ├── SampleApp/
 └── ...
+```
 
 
 ### Quick Start Summary
