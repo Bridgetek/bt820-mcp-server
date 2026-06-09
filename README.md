@@ -130,16 +130,13 @@ This guide explains how to connect the BT820 MCP Server to your local EveApps-BT
 Before you begin, make sure you have:
 
 * **Node.js** (version 18 or later recommended)
-* **Visual Studio Code**
-* An AI extension that supports the **Model Context Protocol (MCP)**
 
 You can verify your Node.js installation:
 ```sh
 node -v
 npm -v
 ```
-
-### Step 1: Download the EveApps-BT82X Repository
+#### Download the EveApps-BT82X Repository
 
 Clone or download the EveApps-BT82X repository to your local machine.
 
@@ -155,9 +152,7 @@ Suppose the repository is located at:
 D:\EveApps-BT82X
 ```
 
-### Step 2: Install the BT820 MCP Server
-
-Install the latest version globally using npm:
+#### Install the latest version globally using npm:
 
 ```sh
 npm install -g bt820-mcp-server
@@ -169,14 +164,20 @@ After installation, you can verify it by running:
 bt820-mcp-server --help
 ```
 
-### Step 3: Create an MCP Configuration File
+### Option 1: Using Visual Studio Code + Claude Code
+
+#### Step 1: Open the EveApps-BT82X Repository
+
+Open the **EveApps-BT82X** folder in Visual Studio Code.
+
+#### Step 2: Create an MCP Configuration File
 
 Open the **EveApps-BT82X** folder in Visual Studio Code.
 
 In the **root directory** of the repository, create a new file named:
 
 ```
-mcp.json
+.mcp.json
 ```
 
 Add the following content:
@@ -224,21 +225,69 @@ For example:
 > * Alternatively, you may use forward slashes:
 > "D:/EveApps-BT82X"
 
-### Step 4: Restart Visual Studio Code
+#### Step 3: Restart Visual Studio Code
 
-Save the **mcp.json** file.
+Save the **.mcp.json** file.
 
 Close and reopen Visual Studio Code (or reload the window) so that the MCP configuration is detected and the BT820 MCP Server starts.
 
-### Step 5: Verify the MCP Server
+#### Step 4: Verify the MCP Server
 
-Open your AI chat panel and ask:
+Open Claude Code and run:
+
+```
+\mcp
+```
+
+Confirm that the BT820 MCP Server appears in the list and shows a connected status.
+
+Once connected, you can start using the server by asking questions such as:
 
 ```
 What tools do you have for BT820?
 ```
 
-If the MCP server is configured correctly, the assistant should respond with the BT820-specific tools that are available, such as sample lookup, API reference, screen scaffold generation, or other BT820 development utilities.
+If the MCP server is configured correctly, Claude Code should list the available BT820 development tools.
+
+### Option 2: Using Claude Desktop
+
+#### Step 1: Open Claude Desktop MCP Settings
+
+Open the Claude Desktop MCP configuration file("claude_desktop_config.json") and add a new BT820 server entry.
+
+#### step 2: Add the BT820 MCP Server Configuration
+
+Example configuration:
+
+```
+{
+  "mcpServers": {
+    "bt820": {
+      "command": "bt820-mcp-server",
+      "args": [
+        "--eveapps",
+        "D:\\EveApps-BT82X"
+      ]
+    }
+  }
+}
+```
+
+Replace the path with the location of your local EveApps-BT82X repository.
+
+#### Step 3: Restart Claude Desktop
+
+Save the configuration file, **completely close** Claude Desktop, and then launch it again to ensure the new MCP configuration is loaded.
+
+#### Step 4: Verify the MCP Server
+
+Start a new conversation and ask:
+
+```
+What tools do you have for BT820?
+```
+
+If the server starts successfully, Claude Desktop will be able to access the BT820-specific tools provided by the MCP server.
 
 ### Troubleshooting
 #### bt820-mcp-server is not recognized
@@ -257,43 +306,20 @@ bt820-mcp-server --help
 
 If the command is still not found, ensure that your global npm installation path is included in your system **PATH** environment variable.
 
-#### The AI assistant cannot find any BT820 tools
+#### The claude code cannot find any BT820 tools
 
 Check that:
 
-* mcp.json is located in the root of the EveApps-BT82X workspace.
+* .mcp.json is located in the root of the EveApps-BT82X workspace.
 * The --eveapps path points to the correct local repository.
-* Visual Studio Code has been restarted after creating or modifying mcp.json.
+* Visual Studio Code has been restarted after creating or modifying .mcp.json.
 
 ### Example Directory Structure
 ```
 EveApps-BT82X/
 │
-├── mcp.json
+├── .mcp.json
 ├── common/
 ├── SampleApp/
 └── ...
 ```
-
-
-### Quick Start Summary
-1. Download EveApps-BT82X.
-
-2. Install the MCP server:
-```sh
-npm install -g bt820-mcp-server
-```
-
-3. Create mcp.json in the repository root.
-
-4. Configure the --eveapps path.
-
-5. Restart Visual Studio Code.
-
-6. Ask:
-
-```
-What tools do you have for BT820?
-```
-
-If the assistant lists the available BT820 tools, the setup is complete.
