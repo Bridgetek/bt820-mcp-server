@@ -1,7 +1,9 @@
 import { execSync } from "child_process";
 
-console.log("Building...");
+console.log("Building workspace (tsc -b)...");
 
-execSync("tsc -p tsconfig.json", { stdio: "inherit" });
+execSync("npx tsc -b --force", {
+    stdio: "inherit"
+});
 
 console.log("Build done");

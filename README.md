@@ -236,7 +236,7 @@ Close and reopen Visual Studio Code (or reload the window) so that the MCP confi
 Open Claude Code and run:
 
 ```
-\mcp
+/mcp
 ```
 
 Confirm that the BT820 MCP Server appears in the list and shows a connected status.

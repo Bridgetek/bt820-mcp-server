@@ -17,7 +17,7 @@ export function readSourceFile(
     args: ReadSourceFileInput,
     context: WorkspaceContext
 ) {
-    const repoRoot = path.resolve(context.eveappsRoot ?? context.workspaceRoot);
+    const repoRoot =  path.resolve(context.eveappsRoot ?? process.cwd());
     const fullPath = path.resolve(repoRoot, args.relative_path);
     const relativePath = path.relative(repoRoot, fullPath);
 

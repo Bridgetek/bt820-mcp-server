@@ -1,18 +1,20 @@
 {
   "name": "bt820-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/server.js",
   "bin": {
-    "bt820-mcp-server": "dist/server.js"
+    "bt820-mcp-server": "dist/cli.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc -b",
-    "dev": "node --watch dist/server.js"
+    "build": "tsc -b"
   },
   "dependencies": {
-    "eveapps-core": "1.0.0",
     "@modelcontextprotocol/sdk": "^1.17.1",
+    "eveapps-core": "^1.0.1",
     "zod": "^3.25.76"
   },
   "devDependencies": {

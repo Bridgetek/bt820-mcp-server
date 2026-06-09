@@ -1,13 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export interface WorkspaceContextOptions {
-    workspaceRoot: string;
-    eveappsRoot?: string;
-}
-
 export interface WorkspaceContext {
-    workspaceRoot: string;
     eveappsRoot?: string;
 
     dataRoot: string;
@@ -17,17 +11,20 @@ export interface WorkspaceContext {
     readJsonFile<T>(file: string): T;
 }
 
-export function createWorkspaceContext(
-    options: WorkspaceContextOptions
-): WorkspaceContext {
-    const workspaceRoot = path.resolve(options.workspaceRoot);
+export function createWorkspaceContext(eveappsRootOption?: string): WorkspaceContext {
 
-    const dataRoot = path.join(workspaceRoot, "data");
+    const givenRoot: string = (typeof eveappsRootOption === "string" && eveappsRootOption.length > 0)
+        ? eveappsRootOption
+        : process.cwd();
+
+    const eveappsRoot = path.resolve(givenRoot);
+
+    const dataRoot = path.join(eveappsRoot, "data");
 
     function resolveDataPath(file: string): string {
         const candidates = [
-            path.join(workspaceRoot, "data", file),
-            path.join(workspaceRoot, "dist", "data", file)
+            path.join(eveappsRoot, "data", file),
+            path.join(eveappsRoot, "dist", "data", file)
         ];
 
         for (const p of candidates) {
@@ -41,21 +38,12 @@ export function createWorkspaceContext(
 
     function readJsonFile<T>(file: string): T {
         const fullPath = resolveDataPath(file);
-
-        if (!fs.existsSync(fullPath)) {
-            throw new Error(
-                `Required data file not found: ${fullPath}`
-            );
-        }
-
         const content = fs.readFileSync(fullPath, "utf-8");
-
         return JSON.parse(content) as T;
     }
 
     return {
-        workspaceRoot,
-        eveappsRoot: options.eveappsRoot ? path.resolve(options.eveappsRoot) : undefined,
+        eveappsRoot,
         dataRoot,
         resolveDataPath,
         readJsonFile,

@@ -34,33 +34,22 @@ import fs from "fs";
 // -----------------------------
 // Workspace handling
 // -----------------------------
-function getArg(name: string): string | undefined {
+function parseArgs(argv: string[]) {
+    const args: any = {};
 
-    for (let i = 0; i < process.argv.length; i++) {
-
-        const arg = process.argv[i];
-        if (arg === undefined) continue;
-
-        // --eveapps=D:/path
-        if (arg.startsWith(name + "=")) {
-            return arg.substring(name.length + 1);
-        }
-
-        // --eveapps D:/path
-        if (arg === name) {
-            return process.argv[i + 1] ?? undefined;
+    for (let i = 0; i < argv.length; i++) {
+        if (argv[i] === "--eveapps") {
+            args.eveappsRoot = argv[i + 1];
         }
     }
 
-    return undefined;
+    return args;
 }
 
 function printUsage(): void {
-    console.log(`Usage: node server.js --core <path> [--eveapps <path>]
+    console.log(`Usage: node server.js [--eveapps <path>]
 
 Options:
-  --core <path>       Path to the eveapps-core package or workspace root
-  --workspace <path>  Alias for --core
   --eveapps <path>    Path to the local EveApps repository
   --help, -h          Show this help message
 `);
@@ -71,21 +60,13 @@ if (process.argv.includes("--help") || process.argv.includes("-h")) {
     process.exit(0);
 }
 
-// Core + EveApps separation (future-proof)
-const coreRoot = getArg("--core") || getArg("--workspace");
-const eveappsRoot = getArg("--eveapps");
+// EveApps separation (future-proof)
+const args = parseArgs(process.argv);
 
-if (!coreRoot) {
-    console.error("Error: missing required --core or --workspace argument.");
-    printUsage();
-    process.exit(1);
-}
+const eveappsRoot = args.eveappsRoot ?? process.cwd();
 
 // Context object passed to core
-const context = createWorkspaceContext({
-    workspaceRoot: coreRoot,
-    eveappsRoot
-});
+const context = createWorkspaceContext(eveappsRoot);
 
 // -----------------------------
 // MCP Server
@@ -289,7 +270,6 @@ server.registerTool(
 // -----------------------------
 console.error("===================================");
 console.error("BT820 MCP Server Starting...");
-console.error("coreRoot:", coreRoot);
 console.error("eveappsRoot:", eveappsRoot ?? "NOT SET");
 console.error("Node:", process.version);
 console.error("===================================");
