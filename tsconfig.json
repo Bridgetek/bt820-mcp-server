@@ -2,7 +2,7 @@
   "files": [],
   "references": [
     {
-      "path": "./packages/eveapps-core"
+      "path": "./packages/bt820-eveapps-core"
     },
     {
       "path": "./packages/bt820-mcp-server"

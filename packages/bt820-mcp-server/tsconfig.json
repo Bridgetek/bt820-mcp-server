@@ -8,12 +8,12 @@
     "ignoreDeprecations": "5.0",
     "baseUrl": ".",
     "paths": {
-      "eveapps-core": ["../eveapps-core/src/index.ts"]
+      "@bridgetek/bt820-eveapps-core": ["../bt820-eveapps-core/src/index.ts"]
     }
   },
   "references": [
     {
-      "path": "../eveapps-core"
+      "path": "../bt820-eveapps-core"
     }
   ],
   "include": [

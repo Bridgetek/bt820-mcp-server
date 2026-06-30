@@ -7,7 +7,7 @@
   },
   "references": [
     {
-      "path": "../eveapps-core"
+      "path": "../bt820-eveapps-core"
     }
   ],
   "include": [

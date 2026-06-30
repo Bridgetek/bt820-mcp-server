@@ -155,7 +155,7 @@ D:\EveApps-BT82X
 #### Install the latest version globally using npm:
 
 ```sh
-npm install -g bt820-mcp-server
+npm install -g @bridgetek/bt820-mcp-server
 ```
 
 After installation, you can verify it by running:

@@ -26,7 +26,7 @@ import {
     readSourceFileInput,
 
     retrieveAnswer
-} from "eveapps-core";
+} from "@bridgetek/bt820-eveapps-core";
 
 import path from "path";
 import fs from "fs";
@@ -178,7 +178,7 @@ server.registerTool(
                 local_repo: context.eveappsRoot ?? null,
 
                 retrieval_priority: [
-                    "eveapps-core index",
+                    "bt820-eveapps-core index",
                     "local EveApps source repository",
                     "metadata ranking"
                 ],

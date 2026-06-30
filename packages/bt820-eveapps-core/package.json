@@ -1,7 +1,10 @@
 {
-  "name": "eveapps-core",
-  "version": "1.0.2",
+  "name": "@bridgetek/bt820-eveapps-core",
+  "version": "1.1.1",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {

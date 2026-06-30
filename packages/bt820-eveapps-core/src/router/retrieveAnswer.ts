@@ -4,7 +4,7 @@ import { routeQuery } from "./routeQuery.js";
 import { mergeResults } from "./mergeResults.js";
 import { RetrievalResult } from "./types.js";
 
-// You already have these in eveapps-core
+// You already have these in bt820-eveapps-core
 import { searchCore } from "../search/searchCore.js";
 import { searchEveApps } from "../search/searchEveApps.js";
 import { searchSourceFiles } from "../search/searchSourceFiles.js";
