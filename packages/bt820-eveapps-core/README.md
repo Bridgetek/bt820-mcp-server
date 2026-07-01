@@ -100,9 +100,9 @@ npm publish --access public
 Then publish dependent packages (for example `@bridgetek/bt820-mcp-server`) after the core package is available.
 
 > [!NOTE]
-> The package is configured as a public scoped npm package.
-> If npm account security requires two-factor authentication, an OTP may be required during publishing.
-> Dependent packages such as @bridgetek/bt820-mcp-server should be updated after publishing a new core version.
+> - The package is configured as a public scoped npm package.
+> - If npm account security requires two-factor authentication, an OTP may be required during publishing.
+> - Dependent packages such as `@bridgetek/bt820-mcp-server` should be updated after publishing a new core version.
 
 ## License
 
