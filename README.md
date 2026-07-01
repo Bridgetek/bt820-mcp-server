@@ -172,8 +172,6 @@ Open the **EveApps-BT82X** folder in Visual Studio Code.
 
 #### Step 2: Create an MCP Configuration File
 
-Open the **EveApps-BT82X** folder in Visual Studio Code.
-
 In the **root directory** of the repository, create a new file named:
 
 ```
